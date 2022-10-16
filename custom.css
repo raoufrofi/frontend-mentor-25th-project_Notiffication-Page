@@ -1,0 +1,51 @@
+* > p {
+  transition: all 0.5s;
+}
+
+.unread {
+  transition: all 1s;
+}
+
+i {
+  transition: all 1s;
+}
+
+#allRead {
+  transition: all 1s;
+}
+
+#notificationsCount {
+  transition: all 1s;
+}
+
+.pinkDotAnima {
+  animation: pinkDot 1s forwards ease-in-out;
+}
+
+@keyframes pinkDot {
+  0% {
+    opacity: 1;
+    translate: 0;
+  }
+  100% {
+    opacity: 0;
+    translate: 50px;
+  }
+}
+
+/* Count Animation */
+.countAnima {
+  animation: countAnima 1s infinite ease-in-out;
+}
+
+@keyframes countAnima {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}

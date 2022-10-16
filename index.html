@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Notifications page</title>
+  </head>
+  <body class="min-h-screen w-full md:py-8 bg-Very-light-grayish-blue font-jakarta">
+    <main class="w-full max-w-[650px] mx-auto p-4 bg-White rounded-xl shadow">
+      <!---------------------------- 
+        HEADER
+       ---------------------------->
+      <header class="py-4">
+        <ul class="flex justify-between items-center">
+          <li>
+            <h1 class="text-Very-dark-blue text-2xl font-bold inline-block mr-2">
+              Notifications
+            </h1>
+            <span
+              class="text-white bg-links px-3 rounded-lg font-bold text-xl cursor-pointer inline-block"
+              id="notificationsCount"
+            >
+              3
+            </span>
+          </li>
+          <li class="cursor-pointer">
+            <i
+              id="load"
+              class="fa-solid fa-rotate-right text-Grayish-blue hover:text-links mr-2 hover:bg-Light-grayish-blue-2 rounded-full p-2"
+            ></i>
+            <span
+              id="allRead"
+              class="hover:text-links hover:bg-Light-grayish-blue-2 py-1 px-2 rounded-lg"
+            >
+              Mark all as read
+            </span>
+          </li>
+        </ul>
+      </header>
+
+      <!----------------------------
+        SECTION OF NOTIFICATIONS
+       ---------------------------->
+      <section class="py-2 space-y-2">
+        <!------------
+        NOTIFICATION ITEM - 1
+      ---------------->
+        <ul class="unread flex p-4 gap-4 items-center bg-Light-grayish-blue-1 rounded-lg">
+          <li class="min-w-[36px] w-9">
+            <img class="w-full" src="assets/images/avatar-mark-webber.webp" alt="" />
+          </li>
+          <li class="">
+            <p class="text-sm">
+              <span class="font-bold text-Very-dark-blue cursor-pointer hover:text-links"
+                >Mark Webber </span
+              >reacted to your recent post
+              <span class="font-bold text-Grayish-blue cursor-pointer"
+                >My first tournament today!</span
+              >
+              <i class="fa-solid fa-circle text-pink-500 text-[10px] ml-1"></i>
+            </p>
+            <p class="text-Grayish-blue text-sm">1m ago</p>
+          </li>
+        </ul>
+        <!------------
+        NOTIFICATION ITEM - 2
+      ---------------->
+        <ul class="unread flex p-4 gap-4 items-center bg-Light-grayish-blue-1 rounded-lg">
+          <li class="min-w-[36px] w-9">
+            <img class="w-full" src="assets/images/avatar-angela-gray.webp" alt="" />
+          </li>
+          <li class="">
+            <p class="text-sm">
+              <span class="font-bold text-Very-dark-blue cursor-pointer hover:text-links"
+                >Angela Gray </span
+              >followed you
+              <i class="fa-solid fa-circle text-pink-500 text-[10px] ml-1"></i>
+            </p>
+            <p class="text-Grayish-blue text-sm">5m ago</p>
+          </li>
+        </ul>
+        <!------------
+        NOTIFICATION ITEM - 3
+      ---------------->
+        <ul class="unread flex p-4 gap-4 items-center bg-Light-grayish-blue-1 rounded-lg">
+          <li class="min-w-[36px] w-9">
+            <img class="w-full" src="assets/images/avatar-jacob-thompson.webp" alt="" />
+          </li>
+          <li class="">
+            <p class="text-sm">
+              <span class="font-bold text-Very-dark-blue cursor-pointer hover:text-links"
+                >Jacob Thompson </span
+              >has joined your group
+              <span class="font-bold text-links cursor-pointer">Chess Club</span>
+              <i class="fa-solid fa-circle text-pink-500 text-[10px] ml-1"></i>
+            </p>
+            <p class="text-Grayish-blue text-sm">1 day ago</p>
+          </li>
+        </ul>
+        <!------------
+        NOTIFICATION ITEM - 4
+      ---------------->
+        <ul class="flex p-4 gap-4 rounded-lg">
+          <li class="min-w-[36px] w-9">
+            <img class="w-full" src="assets/images/avatar-rizky-hasanuddin.webp" alt="" />
+          </li>
+          <li class="">
+            <p class="text-sm">
+              <span class="font-bold text-Very-dark-blue cursor-pointer hover:text-links"
+                >Rizky Hasanuddin </span
+              >sent you a private message
+            </p>
+            <p class="text-Grayish-blue text-sm">5 days ago</p>
+            <p class="border-[1px] rounded-md p-4 text-sm mt-2 box-border">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few
+              weeks now and I'm already having lots of fun and improving my game.
+            </p>
+          </li>
+        </ul>
+
+        <!------------
+        NOTIFICATION ITEM - 5
+      ---------------->
+        <ul class="flex p-4 gap-4 items-center rounded-lg">
+          <li class="min-w-[36px] w-9">
+            <img class="w-full" src="assets/images/avatar-kimberly-smith.webp" alt="" />
+          </li>
+          <li class="">
+            <p class="text-sm">
+              <span class="font-bold text-Very-dark-blue cursor-pointer hover:text-links"
+                >Kimberly Smith </span
+              >commented on your picture
+            </p>
+            <p class="text-Grayish-blue text-sm">1 week ago</p>
+          </li>
+        </ul>
+        <!------------
+        NOTIFICATION ITEM - 6
+      ---------------->
+        <ul class="flex p-4 gap-4 items-center rounded-lg">
+          <li class="min-w-[36px] w-9">
+            <img class="w-full" src="assets/images/avatar-nathan-peterson.webp" alt="" />
+          </li>
+          <li class="">
+            <p class="text-sm">
+              <span class="font-bold text-Very-dark-blue cursor-pointer hover:text-links"
+                >Nathan Peterson </span
+              >reacted to your recent post 5 end-game strategies to increase your win rate
+            </p>
+            <p class="text-Grayish-blue text-sm">2 weeks ago</p>
+          </li>
+        </ul>
+        <!------------
+        NOTIFICATION ITEM - 7
+      ---------------->
+        <ul class="flex p-4 gap-4 items-center rounded-lg">
+          <li class="min-w-[36px] w-9">
+            <img class="w-full" src="assets/images/avatar-anna-kim.webp" alt="" />
+          </li>
+          <li class="">
+            <p class="text-sm">
+              <span class="font-bold text-Very-dark-blue cursor-pointer hover:text-links"
+                >Anna Kim </span
+              >left the group
+              <span class="font-bold text-links cursor-pointer">Chess Club</span>
+            </p>
+            <p class="text-Grayish-blue text-sm">2 weeks ago</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
